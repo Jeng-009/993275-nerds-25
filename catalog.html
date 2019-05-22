@@ -25,70 +25,69 @@
 			<h1 class="page-title">Магазин готовых шаблонов</h1>
 	<section class="filters">
     <h2 class="visually-hidden">Фильтры</h2>
-      <form class="filter">
+      <form class="filter" method="get" action="#">
         <fieldset>
             <legend class="filter-headline">Сетка</legend>
           		<ul>
-                <label>
                   <li class="filter-option">
-                    <input class="filter-grid" type="radio" name="grids" value="adaptive" checked>
-                    Адаптивная
+                    <label>
+                        <input class="filter-grid" type="radio" name="grids" value="adaptive" checked> Адаптивная
+                    </label>
                   </li>
-                </label>
+                
          
-                 <label>
+                
                     <li class="filter-option">
-                      <input class="filter-grid" type="radio" name="grids" value="fix">
-                      Фиксированная
+                      <label>
+                        <input class="filter-grid" type="radio" name="grids" value="fix"> Фиксированная
+                      </label>
                     </li> 
-                  </label>
+               
 
-                  <label>
+                  
                     <li class="filter-option">          
-                      <input class="filter-grid" type="radio" name="grids" value="rubber">
+                      <label>
+                        <input class="filter-grid" type="radio" name="grids" value="rubber">
                       Резиновая
+                      </label>
                     </li>
-                  </label>
+                  
               </ul>
            </fieldset>
 
                <fieldset>
             <legend class="filter-headline">Особенности</legend>
               <ul>
-                <label>
                   <li class="filter-option">
-                    <input class="filter-checkbox" type="checkbox" name="slider"checked>
-                    Слайдер
+                    <label>  
+                      <input class="filter-checkbox" type="checkbox" name="slider" checked > Слайдер
+                   </label>
                   </li>
-                </label>
-         
-                 <label>
-                    <li class="filter-option">
-                      <input class="filter-checkbox" type="checkbox" name="advantages">
-                      Блок преимуществ
-                    </li> 
-                  </label>
+        
+                  <li class="filter-option">
+                    <label>
+                      <input class="filter-checkbox" type="checkbox" name="advantages"> Блок преимуществ
+                    </label>
+                  </li> 
+                 
 
-                  <label>
+                  
                     <li class="filter-option">          
-                      <input class="filter-checkbox" type="checkbox" name="news" checked>
-                      Новости
+                     <label> 
+                        <input class="filter-checkbox" type="checkbox" name="news" checked> Новости
+                      </label>
                     </li>
-                  </label>
-
-                  <label>
+                 
+                    <li class="filter-option">      
+                      <label>    
+                        <input class="filter-checkbox" type="checkbox" name="gallary"> Галерея
+                      </label>
+                    </li>
+               
                     <li class="filter-option">          
-                      <input class="filter-checkbox" type="checkbox" name="gallary">
-                      Галерея
+                      <label>
+                        <input class="filter-checkbox" type="checkbox" name="basket"> Корзина </label>
                     </li>
-                  </label>
-
-                  <label>
-                    <li class="filter-option">          
-                      <input class="filter-checkbox" type="checkbox" name="basket">
-                      Корзина
-                    </li>
-                  </label>
               </ul>
             </fieldset>
             <button type="submit" class="filter-button">Показать</button>
@@ -164,24 +163,28 @@
   <section class="feedback">
   <h2>Напишите нам</h2>
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <label>
-          <p class=feeback-p> Ваше имя:
-            <input type="text" name="name" value="" placeholder="Имя Фамилия">
-          </p>
-        </label>
-
-        <label>
-          <p class=feeback-p> Ваш e-mail:
-            <input type="email" name="email" value="" placeholder="email@example.com">
-          </p>
-      </label>
         
-        <label>
-          <p class=feeback-p> Текст письма:
-            <input type="text" name="message" value="" placeholder="В свободной форме">
+        <div class="string-form">
+          <p class=feeback-p>
+             <label for="label-name"> Ваше имя:
+              <input type="text" name="name" id="label-name" placeholder="Имя Фамилия">
+            </label>
           </p>
-      </label>
+          
+          <p class=feeback-p> 
+            <label for="label-mail"> Ваш e-mail: 
+              <input type="email" name="email" id="label-mail" placeholder="email@example.com">      
+            </label>
+          </p>
+        </div>
+        
+          <p class=feeback-p>
+            <label for="label-message"> Текст письма:
+              <textarea rows="10" cols="45" name="message" id="label-message" placeholder="В свободной форме" ></textarea> 
+            </label>
+          </p>
       <button class="form-buttom" type="submit">Отправить</button>
+      <button class="close" type="submit">Закрыть</button>
     </form>
 </section>
 </html>

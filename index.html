@@ -66,27 +66,31 @@
 	</div>
 </footer>
 
-<section class="feedback">
+  <section class="feedback">
   <h2>Напишите нам</h2>
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <label>
-          <p class=feeback-p> Ваше имя:
-            <input type="text" name="name" value="" placeholder="Имя Фамилия">
-          </p>
-        </label>
-
-        <label>
-          <p class=feeback-p> Ваш e-mail:
-            <input type="email" name="email" value="" placeholder="email@example.com">
-          </p>
-      </label>
         
-        <label>
-          <p class=feeback-p> Текст письма:
-            <input type="text" name="message" value="" placeholder="В свободной форме">
+        <div class="string-form">
+          <p class=feeback-p>
+             <label for="label-name"> Ваше имя:
+              <input type="text" name="name" id="label-name" placeholder="Имя Фамилия">
+            </label>
           </p>
-      </label>
+          
+          <p class=feeback-p> 
+            <label for="label-mail"> Ваш e-mail: 
+              <input type="email" name="email" id="label-mail" placeholder="email@example.com">      
+            </label>
+          </p>
+        </div>
+        
+          <p class=feeback-p>
+            <label for="label-message"> Текст письма:
+              <textarea rows="10" cols="45" name="message" id="label-message" placeholder="В свободной форме" ></textarea> 
+            </label>
+          </p>
       <button class="form-buttom" type="submit">Отправить</button>
+      <button class="close" type="submit">Закрыть</button>
     </form>
 </section>
 
