@@ -19,7 +19,7 @@ text-decoration: none;
 
 .main-navigation {
 background-color: #eeeeee;
-color: 000000;
+color: #000000;
 line-height: 30px;
 font-weight: 500;
 text-transform: uppercase;
@@ -75,7 +75,7 @@ background-color: #FB565A;
 padding: 19px 40px 19px 40px;
 }
 .button-red:hover,
-.button-red:focus,
+.button-red:focus
 {
 background-color: #E74246;
 }
@@ -163,18 +163,31 @@ input:focus + label {
 color: #FB565A;
 }
 
-.filter-option:disabled label {
-rgba: (40,49,54, 0.3);
+input:disabled + label {
+color: rgba(40,49,54, 0.3);
 }
 
 
 .filter-button {
-font-size: 16px;
-line-height: 18px;
+	background-color: #EEEEEE;
+	padding: 20px 90px 20px 90px;
+	font-size: 16px;
+	line-height: 18px;
 
-text-transform: uppercase;
-background-color: #EEEEEE;
+	text-transform: uppercase;
+	background-color: #EEEEEE;
 }
+
+.filter-button:hover,
+.filter-button:focus {
+	background-color: #DFDFDF;
+}
+
+.filter-button:active {
+border-top: 3px solid #BFBFBF;
+background-color: #D5D5D5;
+color: rgba(0,0,0,0.3);
+} 
 
 .filter-button:hover,
 .filter-button:focus
@@ -186,7 +199,6 @@ background-color: #DFDFDF;
 
 .filter-button:active {
 color: rgba(0,0,0, 0.3);
-
 background-color: #D5D5D5;
 }
 
@@ -194,4 +206,37 @@ background-color: #D5D5D5;
 display: none;
 }
 
+.template-hover {
+background-color: #eeeeee;
+color: 666666;
+text-align: center;
+font-size: 16px;
+font-weight: 400;
+line-height: 18px;
+}
 
+.template-hover h3 {
+color: #000000;
+font-weight: 700;
+font-size: 18;
+line-height: 30px;
+text-transform: uppercase;
+}
+
+.template-hover a {
+background-color: #FB565A;
+color: #ffffff;
+text-transform: uppercase;
+
+padding: 19px 60px 19px 60px;
+}
+
+.template-hover a:hover,
+.template-hover a:focus {
+background-color: #E74246;
+}
+
+.template-hover a:active {
+background-color: #D7373B;
+border-top: solid 3px #C13134;
+}
