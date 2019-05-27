@@ -24,7 +24,6 @@ a {
 	text-transform: uppercase;
 
 	background-color: #eeeeee;
-
 }
 
 .site-navigation,
@@ -79,8 +78,7 @@ a {
 	
 }
 .button-red:hover,
-.button-red:focus
-{
+.button-red:focus {
 	background-color: #E74246;
 }
 
@@ -108,8 +106,7 @@ a {
 }
 
 .button-yellow:hover,
-.button-yellow:focus
- {
+.button-yellow:focus {
 	background-color: #EAB534;
 }
 
@@ -135,8 +132,7 @@ list-style: none;
 	line-height: 22px;
 }
 
-.page-title 
-{
+.page-title {
 	font-size: 55px;
 	line-height: 55px;
 	font-weight: 500;
@@ -167,7 +163,6 @@ input:disabled + label {
 	color: rgba(40,49,54, 0.3);
 }
 
-
 .filter-button {
 	background-color: #EEEEEE;
 	color: #000000;
@@ -192,8 +187,7 @@ input:disabled + label {
 } 
 
 .filter-button:hover,
-.filter-button:focus
- {
+.filter-button:focus {
 	font-size: 16px;
 	line-height: 18px;
 
@@ -210,7 +204,7 @@ input:disabled + label {
 }
 
 .template-hover {
-	color: 666666;
+	color: #666666;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 18px;
@@ -220,12 +214,26 @@ input:disabled + label {
 
 }
 
-.template-hover h3 {
+.template-hover .template-hover-link {
 	color: #000000;
 	font-weight: 700;
-	font-size: 18;
+	font-size: 18px;
 	line-height: 30px;
 	text-transform: uppercase;
+
+	background: transparent; 
+}
+
+.template-hover .template-hover-link:hover,
+.template-hover .template-hover-link:focus {
+	color:#FB565A;
+	background: transparent;
+
+}
+
+.template-hover .template-hover-link:active {
+	color: rgba(0,0,0, 0.3);
+	background: transparent;
 }
 
 .template-hover a {
