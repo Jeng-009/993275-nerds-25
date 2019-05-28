@@ -9,98 +9,101 @@
   <body>
 	<header class="main-header">
 		<nav class="main-navigation">
-		<a class="logo" href="index.html">
-      		<img src="img/nerds-logo.svg" width="160" height="67" alt="Логотип магазина шаблонов для сайта">
-		</a>
-		
-			<ul class="site-navigation">
-				<li><a href="#">Студия</a></li>
-				<li><a href="#">Клиенты</a></li>
-				<li><a class="curent" href="#">Магазин</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
-			
-			<ul class="user-navigation">
-				<li><a href="">Корзина</a></li>
-			</ul>
+        <div class="main-navigation-wrapper">
+        <div class="container">
+  		<a class="logo" href="index.html">
+        		<img src="img/nerds-logo.svg" width="160" height="67" alt="Логотип магазина шаблонов для сайта">
+  		</a>
+  		
+  			<ul class="site-navigation">
+  				<li><a href="#">Студия</a></li>
+  				<li><a href="#">Клиенты</a></li>
+  				<li><a class="curent" href="#">Магазин</a></li>
+  				<li><a href="#">Контакты</a></li>
+  			</ul>
+  			
+  			<ul class="user-navigation">
+  				<li><a href="">Корзина</a></li>
+  			</ul>
+          </div>
+      </div>
 		</nav>
-		
 	</header>
 	
-	<main>
+	<main class="container">
 		<h1 class="page-title">Магазин готовых шаблонов</h1>
-		<section class="filters">
-    		<h2 class="visually-hidden">Фильтры</h2>
-      		<form class="filter" method="get" action="#">
-        		<fieldset>
-        			<legend class="filter-headline">Сетка</legend>
-          		
-          		<ul>
-                  	<li class="filter-option">
-                        <input class="filter-grid" type="radio" id="adaptive" name="grids" value="adaptive" checked> 
-						<label for="adaptive">
-						Адаптивная
-                    	</label>
-                  	</li>
-                
-                    <li class="filter-option">
-						<input class="filter-grid" type="radio" id="grids" name="grids" value="fix"> 
-                      	<label for="grids">
-                      	Фиксированная
-                      </label>
-                    </li> 
-               
-                    <li class="filter-option">          
-                        <input class="filter-grid" type="radio" id="responsive" name="grids" value="rubber">
-						<label for="responsive">
-                      	Резиновая
+  <div class="catalog-columns">
+  		<section class="filters">
+      		<h2 class="visually-hidden">Фильтры</h2>
+        		<form class="filter" method="get" action="#">
+          		<fieldset>
+          			<legend class="filter-headline">Сетка</legend>
+            		<ul>
+                    	<li class="filter-option">
+                          <input class="filter-grid" type="radio" id="adaptive" name="grids" value="adaptive" checked> 
+  						<label for="adaptive">
+  						Адаптивная
                       	</label>
-                    </li>
-              	</ul>
-        </fieldset>
-
-        <fieldset>
-            <legend class="filter-headline">Особенности</legend>
-            	<ul>
-                	<li class="filter-option">
-                		<input class="filter-checkbox" type="checkbox" id="slider" name="slider" checked > 
-						<label for="slider">  
-						Слайдер
-                		</label>
-                	</li>
-        
-                	<li class="filter-option">
-                    	<input class="filter-checkbox" type="checkbox" id="advantages" name="advantages"> 
-						<label for="advantages">
-						Блок преимуществ
-                    	</label>
-                	</li> 
+                    	</li>
                   
-                	<li class="filter-option">          
-                    	<input class="filter-checkbox" type="checkbox" id="news" name="news" checked> 
-                    	<label for="news"> 
-                       	Новости
-                    	</label>
-                	</li>
+                      <li class="filter-option">
+  						<input class="filter-grid" type="radio" id="grids" name="grids" value="fix"> 
+                        	<label for="grids">
+                        	Фиксированная
+                        </label>
+                      </li> 
                  
-                  <li class="filter-option">      
-                    	<input class="filter-checkbox" type="checkbox" id="gallary" name="gallary"> 
-                      <label for="gallary">
-						            Галерея
-                      </label>
-                    </li>
-               
-                    <li class="filter-option">          
-                        <input class="filter-checkbox" type="checkbox" id="basket" name="basket"> 
-                        <label for="basket">
-                        Корзина
-                    	</label>
-                    </li>
-              </ul>
-        </fieldset>
-            <button type="submit" class="button filter-button">Показать</button>
-          </form>
-	</section>
+                      <li class="filter-option">          
+                          <input class="filter-grid" type="radio" id="responsive" name="grids" value="rubber">
+  						<label for="responsive">
+                        	Резиновая
+                        	</label>
+                      </li>
+                	</ul>
+          </fieldset>
+
+          <fieldset>
+              <legend class="filter-headline">Особенности</legend>
+              	<ul>
+                  	<li class="filter-option">
+                  		<input class="filter-checkbox" type="checkbox" id="slider" name="slider" checked > 
+  						<label for="slider">  
+  						Слайдер
+                  		</label>
+                  	</li>
+          
+                  	<li class="filter-option">
+                      	<input class="filter-checkbox" type="checkbox" id="advantages" name="advantages"> 
+  						<label for="advantages">
+  						Блок преимуществ
+                      	</label>
+                  	</li> 
+                    
+                  	<li class="filter-option">          
+                      	<input class="filter-checkbox" type="checkbox" id="news" name="news" checked> 
+                      	<label for="news"> 
+                         	Новости
+                      	</label>
+                  	</li>
+                   
+                    <li class="filter-option">      
+                      	<input class="filter-checkbox" type="checkbox" id="gallary" name="gallary"> 
+                        <label for="gallary">
+  						            Галерея
+                        </label>
+                      </li>
+                 
+                      <li class="filter-option">          
+                          <input class="filter-checkbox" type="checkbox" id="basket" name="basket"> 
+                          <label for="basket">
+                          Корзина
+                      	</label>
+                      </li>
+                </ul>
+          </fieldset>
+              <button type="submit" class="button filter-button">Показать</button>
+            </form>
+  	</section>
 
 	<section class="catalog">
 		<h2 class="visually-hidden">Список готовых шаблонов</h2>
@@ -160,20 +163,23 @@
       		</li>
 		</ul>
 	</section>
+</div>
 	</main>
 
-	<footer class="main-footer">
-			<ul class="footer-social">
-				<li><a class="social-button visually-hidden" href="#">ВКонтакте</a></li>
-				<li><a class="social-button visually-hidden" href="#">Фейсбук</a></li>
-				<li><a class="social-button visually-hidden" href="#">Инстаграм</a></li>
-			</ul>
+  <footer class="main-footer">
+      <div class="container">
+        <ul class="footer-social">
+          <li><a class="social-button visually-hidden" href="#">ВКонтакте</a></li>
+          <li><a class="social-button visually-hidden" href="#">Фейсбук</a></li>
+          <li><a class="social-button visually-hidden" href="#">Инстаграм</a></li>
+        </ul>
 
-			<div class="footer-copyright">
-				<p class="footer-h"> Давайте дружить, это выгодно!</p>
-				<p>Скидка 10% для друзей из социальных сетей.</p>
-			</div>
-	</footer>
+        <div class="footer-copyright">
+          <p class="footer-h"> Давайте дружить, это выгодно!</p>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
+  </footer>
   
  	<section class="feedback">
 		<h2>Напишите нам</h2>
