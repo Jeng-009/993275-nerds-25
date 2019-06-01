@@ -8,8 +8,7 @@
   </head>
   <body>
 	<header class="main-header">
-		<nav class="main-navigation">
-        <div class="container">
+		<nav class="main-navigation container">
   		<a class="logo" href="index.html">
         		<img src="img/nerds-logo.svg" width="160" height="67" alt="Логотип магазина шаблонов для сайта">
   		</a>
@@ -24,16 +23,13 @@
   			<ul class="user-navigation">
   				<li><a href="">Корзина</a></li>
   			</ul>
-          </div>
-      </div>
-              <h1 class="page-title">Магазин готовых шаблонов</h1>
-
 		</nav>
+              <h1 class="page-title">Магазин готовых шаблонов</h1>
 
 	</header>
 	
 	<main class="container">
-  <div class="catalog-columns container">
+  <div class="catalog-columns">
   		<section class="filters">
       		<h2 class="visually-hidden">Фильтры</h2>
         		<form class="filter" method="get" action="#">
@@ -109,57 +105,60 @@
 	<section class="catalog">
 		<h2 class="visually-hidden">Список готовых шаблонов</h2>
 		<ul class="catalog-list">
-      		<li class="catalog-item">
+      		<li class="list-item">
         		<a href="#"><img src="img/img-sedona.jpg" width="360" height="576"  alt="Шаблон для сайта - город Седона"></a>
           		<div class="template-hover">
                   <h3><a class="template-hover-link" href="#">Sedona</a></h3>
               		<p>Информационный сайт для туристов</p>
-              		<a href="#">9 900 руб.</a>
+              		<a class="block" href="#">9 900 руб.</a>
           		</div>
       		</li>
 
-      		<li class="catalog-item">
+      		<li class="list-item">
        			<a href="#"><img src="img/img-pink.jpg"  width="360" height="576"  alt="Шаблон приложения для телефона"></a>
         		<div class="template-hover">
             		<h3><a class="template-hover-link" href="#">Pink</a></h3>
 		            <p>Приложения для телефона</p>
-		            <a href="#">9 900 руб.</a>
+		            <a class="block" href="#">9 900 руб.</a>
         		</div>
       		</li>
 
-     		 <li class="catalog-item">
-			    <a href="#"><img src="img/img-barbershop.jpg"  width="360" height="576"  alt="Шаблон барбершопа Borodinski"></a>
+     		 <li class="list-item">
+			    <a href="#">
+			    	<img src="img/img-barbershop.jpg"  width="360" height="576"  alt="Шаблон барбершопа Borodinski">
+			    </a>
+		        
 		        <div class="template-hover">
             		<h3><a class="template-hover-link" href="#">Borodinski</a></h3>
             		<p>Барбершоп Borodinski</p>
-            		<a href="#">9 900 руб.</a>
+            		<a class="block" href="#">9 900 руб.</a>
         		</div>
       		</li>
 
-      		<li class="catalog-item">
+      		<li class="list-item">
         		<a href="#"><img src="img/img-mishka.jpg"  width="360" height="576"  alt="Шаблон изделий ручной работы"></a>
         		<div class="template-hover">
 		            <h3><a class="template-hover-link" href="#">Mishka</a></h3>
 		            <p>Вязаные корзинки</p>
-		            <a href="#">9 900 руб.</a>
+		            <a class="block" href="#">9 900 руб.</a>
         		</div>
       		</li>
 
-      		<li class="catalog-item">
+      		<li class="list-item">
 		        <a href="#"><img src="img/img-aplus.jpg"  width="360" height="576"  alt="Шаблон сайта для онлайн-обучения"></a>
 		        <div class="template-hover">
 		            <h3><a class="template-hover-link" href="#">А+</a></h3>
 		            <p>Сайт для учебы</p>
-		            <a href="#">9 900 руб.</a>
+		            <a class="block" href="#">9 900 руб.</a>
         		</div>
      		</li>
 
-      		<li class="catalog-item">
+      		<li class="list-item">
 		        <a href="#"><img src="img/img-kvast.jpg"  width="360" height="576"   alt="Шаблон производителя кваса - Кваст"></a>
 		        <div class="template-hover">
 		            <h3><a class="template-hover-link" href="#">Кваст</a></h3>
 		            <p>Крафтовый квас</p>
-		            <a href="#">9 900 руб.</a>
+		            <a class="block" href="#">9 900 руб.</a>
         		</div>
       		</li>
 		</ul>
@@ -167,20 +166,18 @@
 </div>
 	</main>
 
-  <footer class="main-footer">
-      <div class="container">
-        <ul class="footer-social">
-          <li><a class="social-button" href="#">ВКонтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-        </ul>
+<footer class="main-footer container">
+			<ul class="footer-social">
+				<li><a class="social-button visually-hidden" href="#">ВКонтакте</a></li>
+				<li><a class="social-button visually-hidden" href="#">Фейсбук</a></li>
+				<li><a class="social-button visually-hidden" href="#">Инстаграм</a></li>
+			</ul>
 
-        <div class="footer-copyright">
-          <p class="footer-h"> Давайте дружить, это выгодно!</p>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-        </div>
-      </div>
-  </footer>
+			<div class="footer-copyright">
+				<p class="footer-h"> Давайте дружить, это выгодно!</p>
+				<p>Скидка 10% для друзей из социальных сетей.</p>
+			</div>
+</footer>
   
  	<section class="feedback">
 		<h2>Напишите нам</h2>
