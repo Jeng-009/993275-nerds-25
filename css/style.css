@@ -23,7 +23,7 @@ a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 100px;
+	padding-top: 80px;
 
 	color: #000000;
 	line-height: 30px;
@@ -83,7 +83,6 @@ a {
 }
 
 .catalog-item h3 {
-		padding-top: 25px;
 	margin-bottom: 30px;
 
 	line-height: 30px;
@@ -203,6 +202,8 @@ a {
 
 .filter fieldset {
 	border: none;
+	margin-left: 0;
+    padding-left: 0;
 }
 
 .filter legend {
@@ -281,9 +282,6 @@ input:disabled + label {
 
 
 .template-hover .template-hover-link {
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	color: #000000;
 	font-weight: 700;
 	font-size: 18px;
@@ -311,9 +309,7 @@ input:disabled + label {
 
 .template-hover a {
 	border-radius: 5px;
-	padding: 19px 60px;
 	display: inline-block;
-
 	
 	color: #ffffff;
 	text-transform: uppercase;
@@ -396,7 +392,10 @@ li + li .social-button {
 	padding-bottom: 30px;
 }
 
-.list-item h3 {
-	margin: 0;
-	padding-bottom: 0px;
+.template-hover h3 {
+	padding-top: 30px;
+}
+
+.block {
+	padding: 20px 60px;
 }
