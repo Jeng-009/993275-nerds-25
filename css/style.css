@@ -313,6 +313,7 @@ input:disabled + label {
 	border-radius: 5px;
 	border-top: 3px solid transparent;
 	display: inline-block;
+	vertical-align: top;
 	padding: 20px 60px;
 
 	
