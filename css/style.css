@@ -16,6 +16,7 @@ body {
 
 a {
 	text-decoration: none;
+	display: block;
 }
 
 
@@ -23,7 +24,6 @@ a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-top: 80px;
 
 	color: #000000;
 	line-height: 30px;
@@ -75,7 +75,6 @@ a {
 .catalog-service  {
 	margin: 0;
 	padding: 0;
-	width: 1160px;
 	display: flex;
 	justify-content: space-between;
 	
@@ -100,6 +99,9 @@ a {
 .button {
 	border: none;
 	padding: 20px 40px;
+	display: inline-block;
+	vertical-align: top;
+
 
 	font: inherit;
 	font-size: 16px;
@@ -115,7 +117,6 @@ a {
 
 .button-red {
 	background-color: #FB565A;
-	display: inline-block;
 	
 }
 .button-red:hover,
@@ -130,7 +131,6 @@ a {
 
 .button-green {
 	background-color: #00CA74;
-	display: inline-block;
 
 }
 
@@ -147,8 +147,6 @@ a {
 
 .button-yellow {
 	background-color: #EFC84A;
-	display: inline-block;
-
 }
 
 .button-yellow:hover,
@@ -163,7 +161,8 @@ a {
 
 .footer-social {
 	display: flex;
-	justify-content: space-between;
+	padding: 0;
+
 	width: 260px;
 	margin: 0px;
 	list-style: none;
@@ -191,6 +190,8 @@ a {
 }
 
 .page-title {
+	margin: 0;
+	margin-top: 80px;
 	padding-bottom: 120px;
 	font-size: 55px;
 	line-height: 55px;
@@ -228,6 +229,7 @@ input:disabled + label {
 
 .filter-button {
 	padding: 20px 90px;
+	border-top: solid 3px transparent;
 
 	color: #000000;
 	font-size: 16px;
@@ -309,7 +311,10 @@ input:disabled + label {
 
 .template-hover a {
 	border-radius: 5px;
+	border-top: 3px solid transparent;
 	display: inline-block;
+	padding: 20px 60px;
+
 	
 	color: #ffffff;
 	text-transform: uppercase;
@@ -357,20 +362,30 @@ input:disabled + label {
 	width: 100%;
 }
 
-ul {
-	padding-inline-start: 0px;
+.filters ul {
+	padding: 0px;
 }
 
 .visually-hidden {
-	display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-li + li .social-button {
+.footer-social li + li {
 	margin-left: 30px;
 }
 
 .main-header {
 	margin-bottom: 80px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
 	background-color: #eeeeee;
 }
 
@@ -378,9 +393,6 @@ li + li .social-button {
 	display: none;
 }
 
-.service {
-	width: 1160px;
-}
 
 .catalog {
 	width: 760px;
@@ -393,9 +405,11 @@ li + li .social-button {
 }
 
 .template-hover h3 {
-	padding-top: 30px;
+	margin: 0;
 }
 
-.block {
-	padding: 20px 60px;
+
+
+.list-item img {
+	display: block;
 }
