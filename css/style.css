@@ -390,11 +390,6 @@ input:disabled + label {
 	background-color: #eeeeee;
 }
 
-.visually-hidden {
-	display: none;
-}
-
-
 .catalog {
 	width: 760px;
 }
