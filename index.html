@@ -30,24 +30,24 @@
   		<h2 class="visually-hidden">Наши услуги</h2>
     		<ul class="catalog-service">
     			<li class="catalog-item">
-	    			<h3>
-	      				<a class="web-sites" href="#">Веб-сайты</a>
+	    			<h3 class="web-sites">
+	      				Веб-сайты
 	      			</h3>
 	      			<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
 	              	<a class="button button-red" href="#">Заказать</a> 
     			</li>
 
 	    		<li class="catalog-item">
-	      			<h3>
-	      				<a class="web-sites" href="#">Приложения</a>
+	      			<h3 class="applications">
+	      				Приложения
 	      			</h3>
 	      			<p>Покорите топ-10 приложений в AppStore и Goggle Play</p>
 	      			 <a class="button button-green" href="#">Заказать</a>
 	    		</li>
 
 	    		<li class="catalog-item">
-	      			<h3>
-	      				<a class="web-sites" href="#">Презентации</a>
+	      			<h3 class="presentations">
+	      				Презентации
 	      			</h3>
 	      			<p>Вы даже не подозреваете, насколько Вы изумительны!</p>
 	      			<a class="button button-yellow" href="#">Заказать</a>
@@ -58,9 +58,23 @@
 
 <footer class="main-footer container">
 			<ul class="footer-social">
-				<li><a class="social-button visually-hidden" href="#">ВКонтакте</a></li>
-				<li><a class="social-button visually-hidden" href="#">Фейсбук</a></li>
-				<li><a class="social-button visually-hidden" href="#">Инстаграм</a></li>
+				<li>
+					<a class="social-button" href="#">
+					<span class="visually-hidden">ВКонтакте</span>
+				</a>
+				</li>
+				
+				<li>
+					<a class="social-button" href="#">
+						<span class=" visually-hidden">Фейсбук</span>
+					</a>
+				</li>
+
+				<li>
+					<a class="social-button" href="#">
+						<span class=" visually-hidden">Инстаграм</span>
+					</a>
+				</li>
 			</ul>
 
 			<div class="footer-copyright">
@@ -79,13 +93,13 @@
 				<input type="text" name="name" id="label-name" placeholder="Имя Фамилия">
 			</p>
 	          
-			<p class=feeback-p> 
+			<p class="feeback-p feedback-mail"> 
 				<label for="label-mail"> Ваш e-mail:</label>
 				<input type="email" name="email" id="label-mail" placeholder="email@example.com">      
 			</p>
 	    </div>
 	        
-	        <p class=feeback-p>
+	        <p class="feeback-p">
 	            <label for="label-message"> Текст письма:</label>
 	            <textarea rows="10" cols="45" name="message" id="label-message" placeholder="В свободной форме" ></textarea> 
 	        </p>

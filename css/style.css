@@ -16,7 +16,6 @@ body {
 
 a {
 	text-decoration: none;
-	display: block;
 }
 
 
@@ -65,9 +64,8 @@ a {
 	padding: 0;
 
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-between;
-	
+	flex-wrap: wrap;
 	max-width: 760px;
 	list-style: none;
 }
@@ -92,16 +90,13 @@ a {
 
 .catalog-item p {
 	width: 250px;
-	margin: 0 auto;
+	margin: 0;
 	padding-bottom: 30px;
 }
 
 .button {
-	border: none;
 	padding: 20px 40px;
 	display: inline-block;
-	vertical-align: top;
-
 
 	font: inherit;
 	font-size: 16px;
@@ -112,12 +107,11 @@ a {
 	vertical-align: middle;
 	
 	border-radius: 5px;
-
 }
 
 .button-red {
 	background-color: #FB565A;
-	
+	border-top: solid 3px transparent;
 }
 .button-red:hover,
 .button-red:focus {
@@ -127,11 +121,12 @@ a {
 .button-red:active {
 	color: rgba(255,255,255,0.3);
 	background-color: #D7373B;
+	border-top: solid 3px #C13134;
 }
 
 .button-green {
 	background-color: #00CA74;
-
+	border-top: solid 3px transparent;
 }
 
 .button-green:hover,
@@ -142,11 +137,13 @@ a {
 .button-green:active {
 	color: rgba(255,255,255,0.3);
 	background-color: #00AA62;
+	border-top: solid 3px #45AF82;
 
 }
 
 .button-yellow {
 	background-color: #EFC84A;
+	border: solid 3px transparent;
 }
 
 .button-yellow:hover,
@@ -157,6 +154,8 @@ a {
 .button-yellow:active {
 	color: rgba(255,255,255,0.3);
 	background-color: #E5A722;
+	border-top: solid 3px #CD951E;
+
 }
 
 .footer-social {
@@ -180,13 +179,6 @@ a {
 	font-weight: 700;
 	line-height: 36px;
 	margin-bottom: 0px;
-}
-
-.footer-h p {
-	color: #444444;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 22px;
 }
 
 .page-title {
@@ -265,8 +257,50 @@ input:disabled + label {
 	background-color: #D5D5D5;
 }
 
+
 .feedback {
-	display: none;
+	width: 760px;
+	padding: 50px 100px;
+
+	background: rgba(0,0,0,0.00);
+	box-shadow: 0 20px 40px 0 rgba(0,1,1,0.75);
+}
+
+.feedback h2 {
+	line-height: 45px;
+	font-size: 45px;
+	font-weight: 500;
+
+}
+
+.feedback-mail {
+	margin-left: 30px;
+}
+.string-form {
+	display: flex;
+	justify-content: space-between;
+}
+
+.feeback-p input {
+	width: 360px;
+	height: 50px;
+	background: #FFFFFF;
+	border: 2px solid #D7DCDE;
+}
+
+.feeback-p textarea {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	justify-content: space-between;
+	width: 770px;
+
+	border: 2px solid #D7DCDE;
+	margin-bottom: 30px;
+}
+
+.feedback-mail {
+  margin-left: 40px;
 }
 
 .template-hover {
@@ -283,33 +317,8 @@ input:disabled + label {
 }
 
 
-.template-hover .template-hover-link {
-	color: #000000;
-	font-weight: 700;
-	font-size: 18px;
-	line-height: 30px;
-	text-transform: uppercase;
 
-	background-color: transparent; 
-}
-
-.template-hover .template-hover-link:hover,
-.template-hover .template-hover-link:focus {
-	color:#FB565A;
-	border: none;
-
-	background-color: transparent;
-
-}
-
-.template-hover .template-hover-link:active {
-	color: rgba(0,0,0, 0.3);
-	border: none;
-
-	background-color: transparent;
-}
-
-.template-hover a {
+.block {
 	border-radius: 5px;
 	border-top: 3px solid transparent;
 	display: inline-block;
@@ -323,15 +332,33 @@ input:disabled + label {
 	background-color: #FB565A;
 }
 
-.template-hover a:hover,
-.template-hover a:focus {
+.block:hover,
+.block:focus {
 	background-color: #E74246;
 }
 
-.template-hover a:active {	
-	border-top: solid 3px #C13134;
-	
-	background-color: #D7373B;
+.block:active {
+	border-top: 3px solid #AD2C2E;
+	background-color: #C13134;
+}
+
+.template-hover-link {
+	display: block;
+    padding-top: 30px;
+    margin-bottom: 25px;
+        color: black;
+    text-transform: uppercase;
+}
+
+
+
+.template-hover-link:hover,
+.template-hover-link:focus {
+	color: #FB565A;
+}
+
+.template-hover-link:active {	
+	color: rgba(0,0,0,0.3);	
 }
 
 .container {
@@ -364,7 +391,9 @@ input:disabled + label {
 }
 
 .filters ul {
-	padding: 0px;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 25px;
 }
 
 .visually-hidden {
@@ -409,3 +438,166 @@ input:disabled + label {
 .list-item img {
 	display: block;
 }
+
+.user-navigation::before {
+	content: "";
+	position: relative;
+	top: 8px;
+	right: 20px;
+
+	width:15px;
+	height:15px;
+	background-image: url(../img/cart-icon.png);
+}
+
+
+
+.web-sites::before {
+	content: "";
+	display: block;
+
+	position: relative;
+	top: -25px;
+	left: 0px;
+
+	width: 300px;
+	height: 146px;
+	background-image: url(../img/web-sites.png);
+}
+
+.applications::before {
+	content: "";
+	display: block;
+
+	position: relative;
+	top: -25px;
+	left: 0px;
+
+	width: 300px;
+	height: 146px;
+	background-image: url(../img/apps.png);
+}
+
+.presentations::before {
+	content: "";
+	display: block;
+
+	position: relative;
+	top: -25px;
+	left: 0px;
+
+	width: 300px;
+	height: 146px;
+	background-image: url(../img/presentation.png);
+}
+
+.footer-social li:nth-child(1)::before {
+	content: "";
+	display: block;
+	position: relative;
+	top: 26px;
+	right: -20px;
+
+	width: 27px;
+	height: 16px;
+	background-image: url(../img/vk-icon.svg);
+}
+
+.footer-social li:hover,
+.footer-social li:focus {
+	background-color: #E74246;
+}
+
+.footer-social li:active::before {
+	opacity: 0.3;
+}
+
+
+
+.footer-social li:nth-child(2)::before {
+	content: "";
+	display: block;
+	position: relative;
+	top: 26px;
+	right: -26px;
+
+	width: 12px;
+	height: 22px;
+	background-image: url(../img/fb-icon.svg);
+}
+
+.footer-social li:nth-child(3)::before {
+	content: "";
+	display: block;
+	position: relative;
+	top: 26px;
+	right: -23px;
+
+	width: 21px;
+	height: 21px;
+	background-image: url(../img/insta-icon.svg);
+}
+
+.close {
+	position: relative;
+	bottom: 70px;
+    left: 700px;
+}
+
+p.feeback-p {
+	font-weight: 700;
+	padding-bottom: 2px;
+}
+
+.form-buttom {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 18px;
+	text-transform: uppercase;
+	border: none;
+	color: #ffffff;
+	background-color: #FB565A;
+	padding: 20px 80px;
+}
+
+.list-item::before {
+	content: "";
+	display: block;
+
+	position: relative;
+
+	width: 360px;
+	height: 40px;
+	background-image: url(../img/browser-light.svg);
+}
+
+.list-item:hover::before {
+	content: "";
+	display: block;
+
+	position: relative;
+
+	width: 360px;
+	height: 40px;
+	background-image: url(../img/browser.svg);
+}
+
+.filter-option {
+	margin-bottom: 5px;
+}
+
+
+/*
+
+.filter-grid::before {
+	content: "";
+	display: block;
+	position: relative;
+
+	width: 25px;
+	height: 25px;
+
+	background-image: url(../img/radio-off.svg);
+}
+
+*/

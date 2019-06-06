@@ -37,21 +37,21 @@
           			<legend class="filter-headline">Сетка</legend>
             		<ul>
                     	<li class="filter-option">
-                          <input class="filter-grid" type="radio" id="adaptive" name="grids" value="adaptive" checked> 
+                          <input class="filter-grid visually-hidden" type="radio" id="adaptive" name="grids" value="adaptive" checked> 
   						<label for="adaptive">
   						Адаптивная
                       	</label>
                     	</li>
                   
                       <li class="filter-option">
-  						<input class="filter-grid" type="radio" id="grids" name="grids" value="fix"> 
+  						<input class="filter-grid visually-hidden" type="radio" id="grids" name="grids" value="fix"> 
                         	<label for="grids">
                         	Фиксированная
                         </label>
                       </li> 
                  
                       <li class="filter-option">          
-                          <input class="filter-grid" type="radio" id="responsive" name="grids" value="rubber">
+                          <input class="filter-grid visually-hidden" type="radio" id="responsive" name="grids" value="rubber">
   						<label for="responsive">
                         	Резиновая
                         	</label>
@@ -63,35 +63,35 @@
               <legend class="filter-headline">Особенности</legend>
               	<ul>
                   	<li class="filter-option">
-                  		<input class="filter-checkbox" type="checkbox" id="slider" name="slider" checked > 
+                  		<input class="filter-checkbox visually-hidden" type="checkbox" id="slider" name="slider" checked > 
   						<label for="slider">  
   						Слайдер
                   		</label>
                   	</li>
           
                   	<li class="filter-option">
-                      	<input class="filter-checkbox" type="checkbox" id="advantages" name="advantages"> 
+                      	<input class="filter-checkbox visually-hidden" type="checkbox" id="advantages" name="advantages"> 
   						<label for="advantages">
   						Блок преимуществ
                       	</label>
                   	</li> 
                     
                   	<li class="filter-option">          
-                      	<input class="filter-checkbox" type="checkbox" id="news" name="news" checked> 
+                      	<input class="filter-checkbox visually-hidden" type="checkbox" id="news" name="news" checked> 
                       	<label for="news"> 
                          	Новости
                       	</label>
                   	</li>
                    
                     <li class="filter-option">      
-                      	<input class="filter-checkbox" type="checkbox" id="gallary" name="gallary"> 
+                      	<input class="filter-checkbox visually-hidden" type="checkbox" id="gallary" name="gallary"> 
                         <label for="gallary">
   						            Галерея
                         </label>
                       </li>
                  
                       <li class="filter-option">          
-                          <input class="filter-checkbox" type="checkbox" id="basket" name="basket"> 
+                          <input class="filter-checkbox visually-hidden" type="checkbox" id="basket" name="basket"> 
                           <label for="basket">
                           Корзина
                       	</label>
@@ -103,14 +103,17 @@
   	</section>
 
 	<section class="catalog">
+		
 		<h2 class="visually-hidden">Список готовых шаблонов</h2>
 		<ul class="catalog-list">
       		<li class="list-item">
         		<a href="#"><img src="img/img-sedona.jpg" width="360" height="576"  alt="Шаблон для сайта - город Седона"></a>
           		<div class="template-hover">
+
+
                   <h3><a class="template-hover-link" href="#">Sedona</a></h3>
               		<p>Информационный сайт для туристов</p>
-              		<a href="#">9 900 руб.</a>
+              		<a class="block" href="#">9 900 руб.</a>
           		</div>
       		</li>
 
@@ -179,29 +182,27 @@
 			</div>
 </footer>
   
- 	<section class="feedback">
-		<h2>Напишите нам</h2>
-  		<button class="close" type="button">Закрыть</button>
-
-    	<form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        
-        	<div class="string-form">
-          		<p class=feeback-p>
-            	<label for="label-name"> Ваше имя:</label>
-            	<input type="text" name="name" id="label-name" placeholder="Имя Фамилия">
-          		</p>
-          
-          		<p class=feeback-p> 
-	            <label for="label-mail"> Ваш e-mail:</label>
-	            <input type="email" name="email" id="label-mail" placeholder="email@example.com">      
-	          </p>
-        	</div>
-        
-          	<p class=feeback-p>
-            <label for="label-message"> Текст письма:</label>
-            <textarea rows="10" cols="45" name="message" id="label-message" placeholder="В свободной форме" ></textarea> 
-          	</p>
-      		<button class="form-buttom" type="submit">Отправить</button>
-    	</form>
-	</section>
+<section class="feedback">
+  <h2>Напишите нам</h2>
+	<button class="close" type="button">Закрыть</button>
+		<form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">   
+		<div class="string-form">
+			<p class=feeback-p>
+				<label for="label-name"> Ваше имя:</label>
+				<input type="text" name="name" id="label-name" placeholder="Имя Фамилия">
+			</p>
+	          
+			<p class="feeback-p feedback-mail"> 
+				<label for="label-mail"> Ваш e-mail:</label>
+				<input type="email" name="email" id="label-mail" placeholder="email@example.com">      
+			</p>
+	    </div>
+	        
+	        <p class="feeback-p">
+	            <label for="label-message"> Текст письма:</label>
+	            <textarea rows="10" cols="45" name="message" id="label-message" placeholder="В свободной форме" ></textarea> 
+	        </p>
+		<button class="form-buttom" type="submit">Отправить</button>
+	    </form>
+</section>
 </html>
