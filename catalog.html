@@ -37,21 +37,21 @@
           			<legend class="filter-headline">Сетка</legend>
             		<ul>
                     	<li class="filter-option">
-                          <input class="filter-grid visually-hidden" type="radio" id="adaptive" name="grids" value="adaptive" checked> 
+                          <input class="filter-grid" type="radio" id="adaptive" name="grids" value="adaptive" checked> 
   						<label for="adaptive">
   						Адаптивная
                       	</label>
                     	</li>
                   
                       <li class="filter-option">
-  						<input class="filter-grid visually-hidden" type="radio" id="grids" name="grids" value="fix"> 
+  						<input class="filter-grid" type="radio" id="grids" name="grids" value="fix"> 
                         	<label for="grids">
                         	Фиксированная
                         </label>
                       </li> 
                  
                       <li class="filter-option">          
-                          <input class="filter-grid visually-hidden" type="radio" id="responsive" name="grids" value="rubber">
+                          <input class="filter-grid" type="radio" id="responsive" name="grids" value="rubber">
   						<label for="responsive">
                         	Резиновая
                         	</label>
@@ -63,36 +63,45 @@
               <legend class="filter-headline">Особенности</legend>
               	<ul>
                   	<li class="filter-option">
-                  		<input class="filter-checkbox visually-hidden" type="checkbox" id="slider" name="slider" checked > 
-  						<label for="slider">  
+                  		<input class="filter-checkbox check_input" type="checkbox" id="slider" name="slider" checked > 
+                      <span class="check_box"></span>
+  						        <label for="slider"  class="check option">  
   						Слайдер
                   		</label>
                   	</li>
           
                   	<li class="filter-option">
-                      	<input class="filter-checkbox visually-hidden" type="checkbox" id="advantages" name="advantages"> 
-  						<label for="advantages">
+                      	<input class="filter-checkbox check_input" type="checkbox" id="advantages" name="advantages"> 
+  						                <span class="check_box"></span>
+
+              <label for="advantages" class="check option">
   						Блок преимуществ
                       	</label>
                   	</li> 
                     
                   	<li class="filter-option">          
-                      	<input class="filter-checkbox visually-hidden" type="checkbox" id="news" name="news" checked> 
-                      	<label for="news"> 
+                      	<input class="filter-checkbox check_input" type="checkbox" id="news" name="news" checked> 
+                      	                <span class="check_box"></span>
+
+                        <label for="news" class="check option"> 
                          	Новости
                       	</label>
                   	</li>
                    
                     <li class="filter-option">      
-                      	<input class="filter-checkbox visually-hidden" type="checkbox" id="gallary" name="gallary"> 
-                        <label for="gallary">
-  						            Галерея
+                      	<input class="filter-checkbox check_input" type="checkbox" id="gallary" name="gallary"> 
+                                        <span class="check_box"></span>
+
+                        <label for="gallary" class="check option">
+                          Галерея
                         </label>
                       </li>
                  
                       <li class="filter-option">          
-                          <input class="filter-checkbox visually-hidden" type="checkbox" id="basket" name="basket"> 
-                          <label for="basket">
+                          <input class="filter-checkbox check_input" type="checkbox" id="basket" name="basket"  disabled > 
+                                         <span class="check_box"></span>
+
+                          <label for="basket" class="check option">
                           Корзина
                       	</label>
                       </li>

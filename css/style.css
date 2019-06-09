@@ -601,3 +601,48 @@ p.feeback-p {
 }
 
 */
+
+
+.check {
+	padding-left: 35px;
+}
+
+.check_input {
+	position: absolute;
+	-webkit-appearance: none;
+}
+
+
+
+.check_box {
+	position: absolute;
+	margin-left: 3px;
+	width: 23px;
+	height: 23px;
+	background-image: url(../img/checkbox-off.svg);
+	opacity: 0.4;
+}
+
+
+.check_input:checked + .check_box {
+	background-image: url(../img/checkbox-on.svg);
+}
+
+.check_input:focus + .check_box {
+	opacity: 1;
+}
+
+.check_input::checked:focus + .check_box {
+	background-image: url(../img/checkbox-on.svg);
+	opacity: 1;
+}
+
+
+.check_input:disabled + .check_box {
+	opacity: 0.1;
+}
+
+.check_input::checked:disabled + .check_box {
+	background-image: url(../img/checkbox-on.svg);
+	opacity: 1;
+}
