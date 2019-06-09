@@ -1,217 +1,138 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
- 	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
-	<header class="main-header">
-		<nav class="main-navigation container">
-  		<a class="logo" href="index.html">
-        		<img src="img/nerds-logo.svg" width="160" height="67" alt="Логотип магазина шаблонов для сайта">
-  		</a>
-  		
-  			<ul class="site-navigation">
-  				<li><a href="#">Студия</a></li>
-  				<li><a href="#">Клиенты</a></li>
-  				<li><a class="curent" href="#">Магазин</a></li>
-  				<li><a href="#">Контакты</a></li>
-  			</ul>
-  			
-  			<ul class="user-navigation">
-  				<li><a href="">Корзина</a></li>
-  			</ul>
-		</nav>
-              <h1 class="page-title">Магазин готовых шаблонов</h1>
-
-	</header>
-	
-	<main class="container">
-  <div class="catalog-columns">
-  		<section class="filters">
-      		<h2 class="visually-hidden">Фильтры</h2>
-        		<form class="filter" method="get" action="#">
-          		<fieldset>
-          			<legend class="filter-headline">Сетка</legend>
-            		<ul>
-                    	<li class="filter-option">
-                          <input class="filter-grid" type="radio" id="adaptive" name="grids" value="adaptive" checked> 
-  						<label for="adaptive">
-  						Адаптивная
-                      	</label>
-                    	</li>
-                  
-                      <li class="filter-option">
-  						<input class="filter-grid" type="radio" id="grids" name="grids" value="fix"> 
-                        	<label for="grids">
-                        	Фиксированная
-                        </label>
-                      </li> 
-                 
-                      <li class="filter-option">          
-                          <input class="filter-grid" type="radio" id="responsive" name="grids" value="rubber">
-  						<label for="responsive">
-                        	Резиновая
-                        	</label>
-                      </li>
-                	</ul>
-          </fieldset>
-
+<head>
+  <meta charset="utf-8">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <title>HTML Academy: Нёрдс</title>
+</head>
+<body>
+  <header class="main-header">
+    <nav class="main-navigation container">
+      <a class="logo" href="index.html"><img alt="Логотип магазина шаблонов для сайта" height="67" src="img/nerds-logo.svg" width="160"></a>
+      <ul class="site-navigation">
+        <li>
+          <a href="#">Студия</a>
+        </li>
+        <li>
+          <a href="#">Клиенты</a>
+        </li>
+        <li>
+          <a class="curent" href="#">Магазин</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+      <ul class="user-navigation">
+        <li>
+          <a href="">Корзина</a>
+        </li>
+      </ul>
+    </nav>
+    <h1 class="page-title">Магазин готовых шаблонов</h1>
+  </header>
+  <main class="container">
+    <div class="catalog-columns">
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтры</h2>
+        <form action="#" class="filter" method="get">
           <fieldset>
-              <legend class="filter-headline">Особенности</legend>
-              	<ul>
-                  	<li class="filter-option">
-                  		<input class="filter-checkbox check_input" type="checkbox" id="slider" name="slider" checked > 
-                      <span class="check_box"></span>
-  						        <label for="slider"  class="check option">  
-  						Слайдер
-                  		</label>
-                  	</li>
-          
-                  	<li class="filter-option">
-                      	<input class="filter-checkbox check_input" type="checkbox" id="advantages" name="advantages"> 
-  						                <span class="check_box"></span>
-
-              <label for="advantages" class="check option">
-  						Блок преимуществ
-                      	</label>
-                  	</li> 
-                    
-                  	<li class="filter-option">          
-                      	<input class="filter-checkbox check_input" type="checkbox" id="news" name="news" checked> 
-                      	                <span class="check_box"></span>
-
-                        <label for="news" class="check option"> 
-                         	Новости
-                      	</label>
-                  	</li>
-                   
-                    <li class="filter-option">      
-                      	<input class="filter-checkbox check_input" type="checkbox" id="gallary" name="gallary"> 
-                                        <span class="check_box"></span>
-
-                        <label for="gallary" class="check option">
-                          Галерея
-                        </label>
-                      </li>
-                 
-                      <li class="filter-option">          
-                          <input class="filter-checkbox check_input" type="checkbox" id="basket" name="basket"  disabled > 
-                                         <span class="check_box"></span>
-
-                          <label for="basket" class="check option">
-                          Корзина
-                      	</label>
-                      </li>
-                </ul>
+            <legend>Сетка</legend>
+            <ul>
+              <li class="filter-option"><input class="radio_input" id="adaptive" name="grids" type="radio" value="adaptive"> <span class="radio_box"></span> <label class="radio" for="adaptive">Адаптивная</label></li>
+              <li class="filter-option"><input class="radio_input" id="grids" name="grids" type="radio" value="fix"> <span class="radio_box"></span> <label class="radio" for="grids">Фиксированная</label></li>
+              <li class="filter-option"><input class="radio_input" id="responsive" name="grids" type="radio" value="rubber"> <span class="radio_box"></span> <label class="radio" for="responsive">Резиновая</label></li>
+            </ul>
           </fieldset>
-              <button type="submit" class="button filter-button">Показать</button>
-            </form>
-  	</section>
-
-	<section class="catalog">
-		
-		<h2 class="visually-hidden">Список готовых шаблонов</h2>
-		<ul class="catalog-list">
-      		<li class="list-item">
-        		<a href="#"><img src="img/img-sedona.jpg" width="360" height="576"  alt="Шаблон для сайта - город Седона"></a>
-          		<div class="template-hover">
-
-
-                  <h3><a class="template-hover-link" href="#">Sedona</a></h3>
-              		<p>Информационный сайт для туристов</p>
-              		<a class="block" href="#">9 900 руб.</a>
-          		</div>
-      		</li>
-
-      		<li class="list-item">
-       			<a href="#"><img src="img/img-pink.jpg"  width="360" height="576"  alt="Шаблон приложения для телефона"></a>
-        		<div class="template-hover">
-            		<h3><a class="template-hover-link" href="#">Pink</a></h3>
-		            <p>Приложения для телефона</p>
-		            <a class="block" href="#">9 900 руб.</a>
-        		</div>
-      		</li>
-
-     		 <li class="list-item">
-			    <a href="#">
-			    	<img src="img/img-barbershop.jpg"  width="360" height="576"  alt="Шаблон барбершопа Borodinski">
-			    </a>
-		        
-		        <div class="template-hover">
-            		<h3><a class="template-hover-link" href="#">Borodinski</a></h3>
-            		<p>Барбершоп Borodinski</p>
-            		<a class="block" href="#">9 900 руб.</a>
-        		</div>
-      		</li>
-
-      		<li class="list-item">
-        		<a href="#"><img src="img/img-mishka.jpg"  width="360" height="576"  alt="Шаблон изделий ручной работы"></a>
-        		<div class="template-hover">
-		            <h3><a class="template-hover-link" href="#">Mishka</a></h3>
-		            <p>Вязаные корзинки</p>
-		            <a class="block" href="#">9 900 руб.</a>
-        		</div>
-      		</li>
-
-      		<li class="list-item">
-		        <a href="#"><img src="img/img-aplus.jpg"  width="360" height="576"  alt="Шаблон сайта для онлайн-обучения"></a>
-		        <div class="template-hover">
-		            <h3><a class="template-hover-link" href="#">А+</a></h3>
-		            <p>Сайт для учебы</p>
-		            <a class="block" href="#">9 900 руб.</a>
-        		</div>
-     		</li>
-
-      		<li class="list-item">
-		        <a href="#"><img src="img/img-kvast.jpg"  width="360" height="576"   alt="Шаблон производителя кваса - Кваст"></a>
-		        <div class="template-hover">
-		            <h3><a class="template-hover-link" href="#">Кваст</a></h3>
-		            <p>Крафтовый квас</p>
-		            <a class="block" href="#">9 900 руб.</a>
-        		</div>
-      		</li>
-		</ul>
-	</section>
-</div>
-	</main>
-
-<footer class="main-footer container">
-			<ul class="footer-social">
-				<li><a class="social-button visually-hidden" href="#">ВКонтакте</a></li>
-				<li><a class="social-button visually-hidden" href="#">Фейсбук</a></li>
-				<li><a class="social-button visually-hidden" href="#">Инстаграм</a></li>
-			</ul>
-
-			<div class="footer-copyright">
-				<p class="footer-h"> Давайте дружить, это выгодно!</p>
-				<p>Скидка 10% для друзей из социальных сетей.</p>
-			</div>
-</footer>
-  
-<section class="feedback">
-  <h2>Напишите нам</h2>
-	<button class="close" type="button">Закрыть</button>
-		<form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">   
-		<div class="string-form">
-			<p class=feeback-p>
-				<label for="label-name"> Ваше имя:</label>
-				<input type="text" name="name" id="label-name" placeholder="Имя Фамилия">
-			</p>
-	          
-			<p class="feeback-p feedback-mail"> 
-				<label for="label-mail"> Ваш e-mail:</label>
-				<input type="email" name="email" id="label-mail" placeholder="email@example.com">      
-			</p>
-	    </div>
-	        
-	        <p class="feeback-p">
-	            <label for="label-message"> Текст письма:</label>
-	            <textarea rows="10" cols="45" name="message" id="label-message" placeholder="В свободной форме" ></textarea> 
-	        </p>
-		<button class="form-buttom" type="submit">Отправить</button>
-	    </form>
-</section>
+          <fieldset>
+            <legend class="filter-headline">Особенности</legend>
+            <ul>
+              <li class="filter-option"><input checked class="filter-checkbox check_input" id="slider" name="slider" type="checkbox"> <span class="check_box"></span> <label class="check option" for="slider">Слайдер</label></li>
+              <li class="filter-option"><input class="filter-checkbox check_input" id="advantages" name="advantages" type="checkbox"> <span class="check_box"></span> <label class="check option" for="advantages">Блок преимуществ</label></li>
+              <li class="filter-option"><input checked class="filter-checkbox check_input" id="news" name="news" type="checkbox"> <span class="check_box"></span> <label class="check option" for="news">Новости</label></li>
+              <li class="filter-option"><input class="filter-checkbox check_input" id="gallary" name="gallary" type="checkbox"> <span class="check_box"></span> <label class="check option" for="gallary">Галерея</label></li>
+              <li class="filter-option"><input class="filter-checkbox check_input" disabled id="basket" name="basket" type="checkbox"> <span class="check_box"></span> <label class="check option" for="basket">Корзина</label></li>
+            </ul>
+          </fieldset><button class="button filter-button" type="submit">Показать</button>
+        </form>
+      </section>
+      <section class="catalog">
+        <h2 class="visually-hidden">Список готовых шаблонов</h2>
+        <ul class="catalog-list">
+          <li class="list-item">
+            <a href="#"><img alt="Шаблон для сайта - город Седона" height="576" src="img/img-sedona.jpg" width="360"></a>
+            <div class="template-hover">
+              <h3><a class="template-hover-link" href="#">Sedona</a></h3>
+              <p>Информационный сайт для туристов</p><a class="block" href="#">9 900 руб.</a>
+            </div>
+          </li>
+          <li class="list-item">
+            <a href="#"><img alt="Шаблон приложения для телефона" height="576" src="img/img-pink.jpg" width="360"></a>
+            <div class="template-hover">
+              <h3><a class="template-hover-link" href="#">Pink</a></h3>
+              <p>Приложения для телефона</p><a class="block" href="#">9 900 руб.</a>
+            </div>
+          </li>
+          <li class="list-item">
+            <a href="#"><img alt="Шаблон барбершопа Borodinski" height="576" src="img/img-barbershop.jpg" width="360"></a>
+            <div class="template-hover">
+              <h3><a class="template-hover-link" href="#">Borodinski</a></h3>
+              <p>Барбершоп Borodinski</p><a class="block" href="#">9 900 руб.</a>
+            </div>
+          </li>
+          <li class="list-item">
+            <a href="#"><img alt="Шаблон изделий ручной работы" height="576" src="img/img-mishka.jpg" width="360"></a>
+            <div class="template-hover">
+              <h3><a class="template-hover-link" href="#">Mishka</a></h3>
+              <p>Вязаные корзинки</p><a class="block" href="#">9 900 руб.</a>
+            </div>
+          </li>
+          <li class="list-item">
+            <a href="#"><img alt="Шаблон сайта для онлайн-обучения" height="576" src="img/img-aplus.jpg" width="360"></a>
+            <div class="template-hover">
+              <h3><a class="template-hover-link" href="#">А+</a></h3>
+              <p>Сайт для учебы</p><a class="block" href="#">9 900 руб.</a>
+            </div>
+          </li>
+          <li class="list-item">
+            <a href="#"><img alt="Шаблон производителя кваса - Кваст" height="576" src="img/img-kvast.jpg" width="360"></a>
+            <div class="template-hover">
+              <h3><a class="template-hover-link" href="#">Кваст</a></h3>
+              <p>Крафтовый квас</p><a class="block" href="#">9 900 руб.</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  <footer class="main-footer container">
+    <ul class="footer-social">
+      <li>
+        <a class="social-button visually-hidden" href="#">ВКонтакте</a>
+      </li>
+      <li>
+        <a class="social-button visually-hidden" href="#">Фейсбук</a>
+      </li>
+      <li>
+        <a class="social-button visually-hidden" href="#">Инстаграм</a>
+      </li>
+    </ul>
+    <div class="footer-copyright">
+      <p class="footer-h">Давайте дружить, это выгодно!</p>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+  </footer>
+  <section class="feedback">
+    <h2>Напишите нам</h2><button class="close" type="button">Закрыть</button> <span class="close_button"></span>
+    <form action="https://echo.htmlacademy.ru" class="feedback-form" method="post">
+      <div class="string-form">
+        <p class="feeback-p"><label for="label-name">Ваше имя:</label> <input id="label-name" name="name" placeholder="Имя Фамилия" type="text"></p>
+        <p class="feeback-p feedback-mail"><label for="label-mail">Ваш e-mail:</label> <input id="label-mail" name="email" placeholder="email@example.com" type="email"></p>
+      </div>
+      <p class="feeback-p"><label for="label-message">Текст письма:</label> 
+      <textarea cols="45" id="label-message" name="message" placeholder="В свободной форме" rows="10"></textarea></p><button class="form-buttom" type="submit">Отправить</button>
+    </form>
+  </section>
+</body>
 </html>
