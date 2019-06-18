@@ -8,8 +8,6 @@ body {
   color: #283136;
 
   background-color: #ffffff;
-
-  padding-bottom: 50px;
 }
 
 a {
@@ -1257,7 +1255,7 @@ img {
 .write-us-form {  
   position: fixed; 
   left: 50%;
-  top:  25%;
+  top:  15px;
 
   box-sizing: border-box;
   width: 960px;
