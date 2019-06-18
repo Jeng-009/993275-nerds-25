@@ -46,6 +46,7 @@ img {
 
 .button {
   display: inline-block;
+  vertical-align: middle;
   box-sizing: border-box;
   
   font: inherit;  
@@ -934,6 +935,7 @@ img {
   position: relative;
 
   display: inline-block;
+  vertical-align: middle;
   width: 25px;
   height: 15px;  
 }
@@ -1257,7 +1259,6 @@ img {
   left: 50%;
   top:  25%;
 
-  /* display: none; */
   box-sizing: border-box;
   width: 960px;
   margin-left: -480px;
