@@ -1234,6 +1234,22 @@ img {
   opacity: 0.3;
 }
 
+a.social-vk::before {
+  position: absolute;
+
+  left: 1px;
+  top: 16px;
+
+  content: "";
+ 
+  width: 26px;
+  height: 15px;
+
+  background-image: url("../img/vk-icon.svg");
+  background-position: 0px 0px;
+}
+
+
 .footer-discount {
   margin: 0;
   margin-top: 6px;
